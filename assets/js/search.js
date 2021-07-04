@@ -197,7 +197,7 @@ function initializeSearch(index) {
 }
 
 window.addEventListener('load', function() { 
-  fetch(new URL("index.json", rootURL).href)
+  fetch(new URL("/index.json", rootURL).href)
   .then(response => response.json())
   .then(function(data) {
     data = data.length ? data : [];
